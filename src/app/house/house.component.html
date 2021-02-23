@@ -1,0 +1,16 @@
+
+
+<div *ngIf="user.id == house.ownerId"class="card dark-1 shadow-1">
+    <div class="grix xs2 p-3 orange dark-1 txt-white">
+        <p class="font-s3">ID : {{ house.id }}</p>
+        <p class="ml-auto font-s3">Owner : {{ house.ownerId }}</p>
+    </div>
+    <div class="grix xs2 p-3">
+        <p class="">{{ house.address }}</p>
+        <p class="ml-auto">{{ house.price }} $</p>
+    </div>
+    <div class="mx-auto">
+        <button class="btn red dark-1 txt-white" (click)="sell()">Vendre</button>
+    </div>
+</div>
+

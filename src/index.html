@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Immo</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starter template - Axentix</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/axentix@1.1.0/dist/css/axentix.min.css"
+    />
+  </head>
+
+  <body class="layout">
+    <header>
+      <nav class="navbar shadow-1 airforce dark-5">
+        <button
+          class="btn rounded-1 white hide-md-up sidenav-trigger small mr-2"
+          data-target="main-sidenav"
+        >
+          Menu
+        </button>
+        <a href="#" target="_blank" class="navbar-brand">Home</a>
+        <div class="navbar-menu ml-auto">
+          <a class="navbar-link modal-trigger hide-sm-down" data-target="modal-login" href="#">Login</a>            
+        </div>
+      </nav>
+    </header>
+
+    <div class="sidenav white shadow-1" id="main-sidenav" data-ax="sidenav">
+      <div class="sidenav-header">
+        <img
+          src="https://useaxentix.com/img/axentix.svg"
+          alt=""
+          class="sidenav-logo"
+        />
+      </div>
+
+      <a href="#" class="sidenav-link active">Link 1</a>
+      <a href="#" class="sidenav-link">Link 2</a>
+      <a href="#" class="sidenav-link">Link 3</a>
+    </div>
+
+    <main>
+      <div class="container">
+          <app-root></app-root>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axentix@1.0.0/dist/js/axentix.min.js"></script>
+  </body>
 </html>
